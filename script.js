@@ -4,7 +4,7 @@ function toggleMenu() {
     const menuIcon = document.querySelector(".menu-icon img");
     if (menu.style.display === "none") {
         menuIcon.src = "assets/close.svg"; // Change to close icon
-        header.style.height = "100%";
+        header.style.height = "100vh";
         menu.style.display = "flex";
     } else {
         menuIcon.src = "assets/burger.svg"; // Change to menu icon
