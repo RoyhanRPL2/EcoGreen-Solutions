@@ -144,8 +144,7 @@ footer .social-media a {
 /* Additional Styles */
 #hero {
   background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.6)),
-    url("/assets/images/hero.avif")
-      no-repeat center center/cover;
+    url("/assets/images/hero.avif") no-repeat center center/cover;
   color: #fff;
   text-align: center;
   padding: 4rem 2rem;
@@ -197,7 +196,6 @@ footer .social-media a {
   margin: 0 auto;
   margin-bottom: 4rem;
 }
-
 
 #about-us h2 {
   font-size: 3em;
@@ -418,26 +416,6 @@ footer .social-media a {
     width: 100%;
   }
 
-  #menu-active {
-    height: 100%;
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-  }
-
-  #menu-active nav {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    text-align: center;
-    font-size: 1.5rem;
-  }
-
   #products {
     padding: 0 2rem 4rem 2rem;
   }
@@ -458,7 +436,6 @@ footer .social-media a {
 }
 
 @media (max-width: 480px) {
-
   header {
     padding: 0;
   }
@@ -493,26 +470,6 @@ footer .social-media a {
     width: 100%;
   }
 
-  #menu-active {
-    height: 100%;
-    display: none;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-  }
-
-  #menu-active nav {
-    display: flex;
-    flex-direction: column;
-    gap: 2rem;
-    text-align: center;
-    font-size: 2.5rem;
-  }
-
   #hero {
     padding: 3rem 1rem;
     height: 100vh;
@@ -541,7 +498,7 @@ footer .social-media a {
   #about-us h2 {
     font-size: 3rem;
   }
-  
+
   #about-us p {
     font-size: 1.5rem;
     text-align: center;
@@ -626,5 +583,44 @@ footer .social-media a {
   footer .social-media a {
     width: 40px;
     height: auto;
+  }
+
+  #menu-active {
+    background-color: #fff;
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    z-index: 1000;
+  }
+
+  #menu-active .close-icon-container {
+    width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding: 1rem 1.2rem;
+  }
+
+  #menu-active .close-icon {
+    width: 50px;
+    height: auto
+  }
+
+  #menu-active .close-icon img {
+    width: 100%;
+  }
+
+  #menu-active nav {
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    gap: 2rem;
+    text-align: center;
+    font-size: 2.5rem;
   }
 }

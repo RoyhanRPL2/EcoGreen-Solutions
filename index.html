@@ -5,9 +5,11 @@
     <title>EcoGreen - Shop</title>
     <link rel="stylesheet" type="text/css" href="styles.css">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Shop eco-friendly products at EcoGreen Shop! Discover reusable bottles, cotton bags, and bamboo cutlery for a sustainable lifestyle.">
+    <meta name="description"
+        content="Shop eco-friendly products at EcoGreen Shop! Discover reusable bottles, cotton bags, and bamboo cutlery for a sustainable lifestyle.">
     <script src="script.js"></script>
 </head>
+
 
 <body>
     <header>
@@ -31,6 +33,11 @@
             </div>
         </div>
         <div id="menu-active">
+            <div class="close-icon-container">
+                <div class="close-icon">
+                    <img src="/assets/close.svg" alt="Close Icon" onclick="toggleMenu()">
+                </div>
+            </div>
             <nav>
                 <a href="index.html" onclick="menuLinkClicked()">Home</a>
                 <a href="#about-us" onclick="menuLinkClicked()">About Us</a>
@@ -52,29 +59,25 @@
                     and bamboo cutlery. We are committed to reducing plastic waste and promoting a zero-waste lifestyle.
                 </p>
             </div>
-            <img src="/assets/images/about-us.avif"
-                alt="about-img">
+            <img src="/assets/images/about-us.avif" alt="about-img">
         </section>
         <section id="products">
             <h2>Featured Products</h2>
             <div class="product-list">
                 <div class="product-item">
-                    <img src="/assets/images/photo-1617984161716-189c889bd474.avif"
-                        alt="Bamboo Toothbrush">
+                    <img src="/assets/images/photo-1617984161716-189c889bd474.avif" alt="Bamboo Toothbrush">
                     <h3>Bamboo Toothbrush</h3>
                     <p>Eco-friendly and biodegradable.</p>
                     <button class="btn">Add to Cart</button>
                 </div>
                 <div class="product-item">
-                    <img src="/assets/images/premium_photo-1664527307281-faf42c09ac8f.avif"
-                        alt="Reusable Water Bottle">
+                    <img src="/assets/images/premium_photo-1664527307281-faf42c09ac8f.avif" alt="Reusable Water Bottle">
                     <h3>Reusable Water Bottle</h3>
                     <p>Stay hydrated while saving the planet.</p>
                     <button class="btn">Add to Cart</button>
                 </div>
                 <div class="product-item">
-                    <img src="/assets/images/premium_photo-1681498856888-2f3552c0b189.avif"
-                        alt="Cotton Tote Bag">
+                    <img src="/assets/images/premium_photo-1681498856888-2f3552c0b189.avif" alt="Cotton Tote Bag">
                     <h3>Cotton Tote Bag</h3>
                     <p>Durable and stylish for everyday use.</p>
                     <button class="btn">Add to Cart</button>

@@ -1,15 +1,17 @@
 function toggleMenu() {
+    // Toggle the menu visibility without double click bug
     const menu = document.getElementById("menu-active");
     const header = document.querySelector("header");
     const menuIcon = document.querySelector(".menu-icon img");
-    if (menu.style.display === "none") {
-        menuIcon.src = "assets/close.svg"; // Change to close icon
-        header.style.height = "100vh";
-        menu.style.display = "flex";
-    } else {
-        menuIcon.src = "assets/burger.svg"; // Change to menu icon
+
+    if (menu.style.display === "flex") {
         menu.style.display = "none";
         header.style.height = "auto";
+        menuIcon.src = "assets/burger.svg"; // Change to menu icon
+    } else {
+        menu.style.display = "flex";
+        header.style.height = "100vh"; // Full viewport height
+        menuIcon.src = "assets/close.svg"; // Change to close icon
     }
 }
 
